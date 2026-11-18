@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open en rechtenvrije iconenset voor Nederlandse gemeentelijke websites. 250 iconen in vier varianten.">
     <title>Iconen</title>
 </head>
 <body>
-   
     <header>
         <a href="index.html" class="logo-knop">
             <img src="assets/logo-gemeentenconen.png" alt="gemeenteniconen">
@@ -25,12 +25,26 @@
     <main id="inhoud">
         <h1>maak eenvoudig gebruik van onze rechtenvrije <em>iconen</em></h1>
         <search>
-             <label for="iconen-search">Zoek een icoon</label>
-             <input type="search" id="iconen-search" name="icoon" placeholder="Bijv. afval, parkeren, verhuizen">
-             <button>Zoeken</button>
+          <form class="zoekformulier">
+            <label for="iconen-search">Zoek een icoon</label>
+            <input type="search" id="iconen-search" name="icoon" placeholder="Bijv. afval, parkeren, verhuizen">
+            <button type="submit">Zoeken</button>
+          </form>
         </search>
 
-        <
+        <fieldset class="variant-keuze">
+          <legend>Variant</legend>
+          <input type="radio" name="variant" id="variant-line" checked>
+          <label for="variant-line">Line</label>
+          <input type="radio" name="variant" id="variant-fill">
+          <label for="variant-fill">Fill</label>
+          <input type="radio" name="variant" id="variant-regular">
+          <label for="variant-regular">Regular</label>
+          <input type="radio" name="variant" id="variant-diapositive">
+          <label for="variant-diapositive">Diapositive</label>
+  </fieldset>
+
+        
 
         
 
