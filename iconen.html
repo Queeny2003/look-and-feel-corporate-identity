@@ -24,6 +24,7 @@
 
     <main id="inhoud">
         <h1>maak eenvoudig gebruik van onze rechtenvrije <em>iconen</em></h1>
+          <!-- Zoeken -->
         <search>
           <form class="zoekformulier">
             <label for="iconen-search">Zoek een icoon</label>
@@ -32,6 +33,7 @@
           </form>
         </search>
 
+          <!-- Variant kiezen: de CSS laat de juiste plaatjes zien -->
         <fieldset class="variant-keuze">
           <legend>Variant</legend>
           <input type="radio" name="variant" id="variant-line" checked>
@@ -42,11 +44,70 @@
           <label for="variant-regular">Regular</label>
           <input type="radio" name="variant" id="variant-diapositive">
           <label for="variant-diapositive">Diapositive</label>
-  </fieldset>
+        </fieldset>
 
-        
+          <!-- Recent toegevoegde iconen -->
+        <article class="nieuw-blok">
+          <h2>Nieuw toegevoegd</h2>
+          <p>Recent gemaakt door gemeenten en overheidsinstanties.</p>
+          <ul class="iconen-grid">
+            <li>
+              <img src="Iconenset-master/Svg/Line/Rolstoel.svg" alt="Rolstoel" width="48" height="48">
+            </li>
 
-        
+            <li>
+              <img src="Iconenset-master/Svg/Line/HoogWater.svg" alt="Hoog Water" width="48" height="48">
+            </li>
+
+            <li>
+              <img src="Iconenset-master/Svg/Line/BladerenOpruimen.svg" alt="Bladeren Opruimen" width="48" height="48">
+            </li>
+
+            <li>
+              <img src="Iconenset-master/Svg/Line/MeldingStraatverlichting.svg" alt="Melding Straatverlichting" width="48" height="48">
+            </li>
+          </ul>
+        </article>
+
+          <!-- Categorie-menu -->
+        <nav class="categorie-menu">
+            <ul>
+              <li><a href="#afval">Afval en milieu</a></li>
+              <li><a href="#burgerzaken">Burgerzaken</a></li>
+              <li><a href="#zorg">Zorg en welzijn</a></li>
+              <li><a href="#wonen">Wonen en openbare ruimte</a></li>
+              <li><a href="#ondernemen">Ondernemen en inkomen</a></li>
+            </ul>
+        </nav>
+
+          <!-- Uitleg die voor ALLE iconen geldt -->
+        <section class="gebruik-opties">
+          <h2>Zo gebruik je de iconen</h2>
+
+          <details>
+            <summary><em>Direct uit GitHub</em></summary>
+            <p>Ontwikkelaars kunnen iconen rechtstreeks uit de repository laden, waardoor de set altijd actueel blijft op websites.</p>
+            <a href="https://github.com/OpenGemeenten/Iconenset/">Bekijk de repository</a>
+          </details>
+
+          <details>
+            <summary><em>Via webcomponenten</em></summary>
+            <p>Onder leiding van Frameless zijn er van de regular iconen webcomponenten gemaakt, waardoor deze eenvoudig te gebruiken zijn in Common Ground-projecten.</p>
+            <a href="https://frameless.github.io/iconset-npm/">Bekijk de documentatie</a>
+          </details>
+
+          <details>
+            <summary><em>Als SVG-download</em></summary>
+            <p>Liever alles in één keer binnenhalen? Download de complete set als ZIP-bestand.</p>
+            <a href="https://github.com/OpenGemeenten/Iconenset/archive/refs/heads/master.zip">Download de complete set</a>
+          </details>
+
+          <details>
+            <summary><em>Licentie</em></summary>
+            <p>Alle iconen zijn vrijgegeven onder CC0 (publiek domein). Je mag ze gratis gebruiken, aanpassen en verspreiden, zonder bronvermelding.</p>
+          </details>
+        </section>
+
 
         
 
