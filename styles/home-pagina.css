@@ -1,0 +1,82 @@
+
+/* ===== Kaarten op de homepage ===== */
+.kaarten-sectie {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grijs);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--schaduw);
+}
+
+.nieuw-blok {
+  margin-top: 32px;
+}
+
+/* Paarse knop-link onderaan een kaart */
+article > a {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 12px 16px;
+  background-color: var(--paars);
+  color: var(--wit);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+article > a:hover {
+  background-color: var(--paars-donker);
+}
+
+/* ===== Statistieken ===== */
+dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding: 24px 16px;
+  text-align: center;
+  background-color: var(--grijs);
+  border-radius: 8px;
+  box-shadow: var(--schaduw);
+}
+
+dl div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+dt {
+  font-size: 0.9rem;
+  color: var(--tekst-zacht);
+}
+
+dd {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--paars);
+}
+
+/* ===== Vanaf tablet (700px) ===== */
+@media (min-width: 700px) {
+  .kaarten-sectie {
+    flex-direction: row;
+  }
+
+  article {
+    flex: 1;
+    padding: 24px;
+  }
+
+  dl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
