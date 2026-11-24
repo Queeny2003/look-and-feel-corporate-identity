@@ -1,0 +1,203 @@
+
+/* ===== Zoekformulier ===== */
+form[role="search"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 500px;
+  margin-top: 24px;
+}
+
+form[role="search"] label {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  flex: 1 1 200px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid var(--paars);
+  border-radius: 4px;
+}
+
+form[role="search"] button {
+  background-color: var(--paars);
+  color: var(--wit);
+}
+
+form[role="search"] button:hover {
+  background-color: var(--paars-licht);
+  color: var(--paars-donker);
+}
+
+/* ===== Variant-keuze ===== */
+.variant-keuze {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  border: none;
+}
+
+.variant-keuze legend {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Radio's verbergen */
+.variant-keuze input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Variant-knoppen */
+.variant-keuze label {
+  padding: 12px 16px;
+  background-color: var(--paars);
+  color: var(--wit);
+  border: 2px solid var(--paars);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.variant-keuze label:hover {
+  background-color: var(--paars-licht);
+  color: var(--paars-donker);
+}
+
+/* Gekozen variant */
+.variant-keuze input:checked + label {
+  background-color: var(--paars-donker);
+  border-color: var(--paars-donker);
+  color: var(--wit);
+  font-weight: bold;
+}
+
+.variant-keuze input:checked + label::before {
+  content: "✓ ";
+}
+
+/* Zichtbare focus voor toetsenbord */
+.variant-keuze input:focus-visible + label {
+  outline: 3px solid var(--paars-donker);
+  outline-offset: 2px;
+}
+
+/* ===== Variant wisselen ===== */
+/* Standaard zijn alleen de Line-iconen zichtbaar */
+.icon-grid .fill,
+.icon-grid .regular,
+.icon-grid .diapositive {
+  display: none;
+}
+
+/* Verberg Line wanneer een andere variant gekozen is */
+main:has(#variant-fill:checked) .line,
+main:has(#variant-regular:checked) .line,
+main:has(#variant-diapositive:checked) .line {
+  display: none;
+}
+
+/* Toon de gekozen variant */
+main:has(#variant-fill:checked) .fill,
+main:has(#variant-regular:checked) .regular,
+main:has(#variant-diapositive:checked) .diapositive {
+  display: block;
+}
+
+/* ===== Categorieën ===== */
+.categorie-menu {
+  margin-top: 24px;
+}
+
+.categorie-menu ul {
+  max-width: 320px;
+  margin-top: 8px;
+  list-style: none;
+  background-color: var(--wit);
+  border: 2px solid var(--paars);
+  border-radius: 4px;
+}
+
+.categorie-menu li a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--paars-donker);
+  text-decoration: none;
+}
+
+.categorie-menu li a:hover {
+  background-color: var(--paars-licht);
+}
+
+/* ===== Icoonraster ===== */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.icon-grid li {
+  padding: 16px 8px;
+  text-align: center;
+  background-color: var(--grijs);
+  border-radius: 8px;
+}
+
+/* Iconen als klikbare knoppen */
+.icon-grid button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.icon-grid button:hover span {
+  text-decoration: underline;
+}
+
+.icon-grid span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* ===== Uitklapblokken ===== */
+details {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background-color: var(--grijs);
+  border-radius: 8px;
+}
+
+summary {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+summary em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+details p {
+  margin: 8px 0;
+}
+
+details a {
+  color: var(--paars-donker);
+}
+
+/* ===== Tablet en desktop ===== */
+@media (min-width: 700px) {
+  .icon-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

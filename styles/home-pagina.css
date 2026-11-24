@@ -20,6 +20,53 @@ article {
   margin-top: 32px;
 }
 
+
+/* ===== Iconen en illustraties op de homepage ===== */
+.iconen-grid,
+.illustraties-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+  list-style: none;
+}
+
+.iconen-grid li {
+  padding: 5px 6px;
+  text-align: center;
+  background-color: var(--vlak);
+  border-radius: 8px;
+  box-shadow: var(--schaduw-klein);
+}
+
+.iconen-grid img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.iconen-grid span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--tekst-zacht);
+}
+
+.illustraties-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+  .iconen-grid,
+  .illustraties-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
 /* Paarse knop-link onderaan een kaart */
 article > a {
   display: inline-block;

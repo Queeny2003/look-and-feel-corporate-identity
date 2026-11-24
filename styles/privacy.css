@@ -1,0 +1,39 @@
+
+/* ===== Privacyverklaring ===== */
+
+/* Ruimte tussen de verschillende onderdelen */
+main section {
+  margin-bottom: 32px;
+}
+
+/* Tussenkoppen */
+main section h2 {
+  margin-bottom: 12px;
+}
+
+/* Privacytekst */
+main section p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* Lijsten in de privacyverklaring */
+main section ul,
+main section ol {
+  margin: 12px 0 20px;
+  padding-left: 24px;
+}
+
+main section li {
+  margin-bottom: 8px;
+}
+
+/* Links in de privacyverklaring */
+main section a {
+  color: var(--paars-donker);
+  text-underline-offset: 3px;
+}
+
+main section a:hover {
+  color: var(--paars);
+}
