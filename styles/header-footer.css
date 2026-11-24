@@ -1,0 +1,114 @@
+
+/* ===== Header en menu ===== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+/* Logo */
+.logo-knop img {
+  height: 64px;
+  width: auto;
+}
+
+/* Navigatiemenu */
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+
+/* Paarse knoppen in het menu */
+header nav a {
+  display: block;
+  padding: 12px 16px;
+  background-color: var(--paars);
+  color: var(--wit);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Hover en actieve pagina */
+header nav a:hover,
+header nav a.actief {
+  background-color: var(--paars-donker);
+}
+
+/* ===== Footer ===== */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 24px 16px;
+  background-color: var(--paars);
+  color: var(--wit);
+}
+
+.footer-teksten {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: var(--wit);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li a {
+  display: inline-block;
+  padding: 8px 0;
+}
+
+footer img {
+  width: 60px;
+}
+
+/* ===== Vanaf tablet (700px) ===== */
+@media (min-width: 700px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+
+  .logo-knop img {
+    height: 80px;
+  }
+
+  footer {
+    padding: 32px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+}
+
+/* ===== Vanaf desktop (1000px) ===== */
+@media (min-width: 1000px) {
+  .footer-teksten {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .footer-teksten div {
+    flex: 1;
+  }
+}
