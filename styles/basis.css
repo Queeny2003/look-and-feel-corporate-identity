@@ -1,0 +1,96 @@
+
+/* ===== Variabelen ===== */
+:root {
+  --paars: #6b2d8f;
+  --paars-donker: #4f2069;
+  --paars-licht: #efe6f5;
+  --wit: #ffffff;
+  --grijs: #f4f4f4;
+  --tekst: #1a1a1a;
+  --tekst-zacht: #555555;
+  --rand: #cccccc;
+  --vlak: #ffffff;
+  --schaduw: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --schaduw-klein: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Reset en basis ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--tekst);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  max-width: 65ch;
+  text-align: left;
+}
+
+/* ===== Skiplink ===== */
+.skiplink {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  padding: 10px;
+  background: var(--wit);
+  color: var(--paars-donker);
+}
+
+.skiplink:focus {
+  top: 10px;
+}
+
+/* ===== Algemene inhoud ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+main section {
+  margin-top: 32px;
+}
+
+/* ===== Algemene koppen ===== */
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+h1 em {
+  color: var(--paars);
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+/* ===== Tablet en desktop ===== */
+@media (min-width: 700px) {
+  main {
+    padding: 48px 32px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
