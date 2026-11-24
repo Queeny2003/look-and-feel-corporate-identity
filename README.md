@@ -5,8 +5,8 @@ Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande hu
 De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corporate-identity/wiki)
 
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Gemeenten Iconen
+Een overzichtelijke website voor Gemeenten Iconen waarmee gemeenten op een eenvoudige manier open en rechtenvrije iconen kunnen bekijken en gebruiken.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
