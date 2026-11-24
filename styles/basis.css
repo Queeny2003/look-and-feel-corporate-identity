@@ -41,16 +41,6 @@ p {
   text-align: left;
 }
 
-/* ===== Skiplink ===== */
-.skiplink {
-  position: absolute;
-  top: -100px;
-  left: 10px;
-  padding: 10px;
-  background: var(--wit);
-  color: var(--paars-donker);
-}
-
 .skiplink:focus {
   top: 10px;
 }
