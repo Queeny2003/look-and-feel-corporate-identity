@@ -24,6 +24,7 @@
 
     <main id="inhoud">
         <h1>maak eenvoudig gebruik van onze rechtenvrije <em>iconen</em></h1>
+
           <!-- Zoeken -->
         <search>
           <form class="zoekformulier">
@@ -36,38 +37,15 @@
           <!-- Variant kiezen: de CSS laat de juiste plaatjes zien -->
         <fieldset class="variant-keuze">
           <legend>Variant</legend>
-          <input type="radio" name="variant" id="variant-line" checked>
-          <label for="variant-line">Line</label>
-          <input type="radio" name="variant" id="variant-fill">
-          <label for="variant-fill">Fill</label>
-          <input type="radio" name="variant" id="variant-regular">
-          <label for="variant-regular">Regular</label>
-          <input type="radio" name="variant" id="variant-diapositive">
-          <label for="variant-diapositive">Diapositive</label>
+          <label class="label-filter">
+            <input type="radio" name="variant" value="regular" id="variant_regular" checked>Regular</label>
+          <label class="label-filter">
+            <input type="radio" name="variant" value="line" id="variant_line">Line</label>
+          <label class="label-filter">
+            <input type="radio" name="variant" value="fill" id="variant_fill">Fill</label>
+          <label class="label-filter">
+            <input type="radio" name="variant" value="diapositive" id="variant_diapositive">Diapositive</label>
         </fieldset>
-
-          <!-- Recent toegevoegde iconen -->
-        <article class="nieuw-blok">
-          <h2>Nieuw toegevoegd</h2>
-          <p>Recent gemaakt door gemeenten en overheidsinstanties.</p>
-          <ul class="iconen-grid">
-            <li>
-              <img src="Iconenset-master/Svg/Line/Rolstoel.svg" alt="Rolstoel" width="48" height="48">
-            </li>
-
-            <li>
-              <img src="Iconenset-master/Svg/Line/HoogWater.svg" alt="Hoog Water" width="48" height="48">
-            </li>
-
-            <li>
-              <img src="Iconenset-master/Svg/Line/BladerenOpruimen.svg" alt="Bladeren Opruimen" width="48" height="48">
-            </li>
-
-            <li>
-              <img src="Iconenset-master/Svg/Line/MeldingStraatverlichting.svg" alt="Melding Straatverlichting" width="48" height="48">
-            </li>
-          </ul>
-        </article>
 
           <!-- Categorie-menu -->
         <nav class="categorie-menu">
@@ -78,85 +56,60 @@
               <li><a href="#wonen">Wonen en openbare ruimte</a></li>
               <li><a href="#ondernemen">Ondernemen en inkomen</a></li>
             </ul>
-        </nav>
+          </nav>
 
-        <ul class="iconen-grid">
-
-          <li id="letter-a">
-            <a href="aanmelden-icoon.html">
-            <img src="Iconenset-master/Svg/Line/Aanmelden.svg" alt="" width="48" height="48">
-            <span>Aanmelden</span>
-            </a>
-          </li>
-          <li>
-            <img src="Iconenset-master/Svg/Line/Afvalcontainer.svg" alt="" width="48" height="48">
-            <span>Afvalcontainer</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Begraafplaats.svg" alt="" width="48" height="48">
-            <span>Begraafplaats</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/BladerenOpruimen.svg" alt="" width="48" height="48">
-            <span>Bladeren opruimen</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Burgemeester.svg" alt="" width="48" height="48">
-            <span>Burgemeester</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Erfgoed.svg" alt="" width="48" height="48">
-            <span>Erfgoed</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Geboorte.svg" alt="" width="48" height="48">
-            <span>Geboorte</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Gezicht.svg" alt="" width="48" height="48">
-            <span>Gezicht</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/HoogWater.svg" alt="" width="48" height="48">
-            <span>Hoog water</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Inkomen.svg" alt="" width="48" height="48">
-            <span>Inkomen</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/MeldingStraatverlichting.svg" alt="" width="48" height="48">
-            <span>Melding straatverlichting</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Ondernemen.svg" alt="" width="48" height="48">
-            <span>Ondernemen</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Paspoort.svg" alt="" width="48" height="48">
-            <span>Paspoort</span>
-          </li>
-
-          <li>
-            <img src="Iconenset-master/Svg/Line/Rolstoel.svg" alt="" width="48" height="48">
-            <span>Rolstoel</span>
-          </li>
-        </ul>
+          <section>
+            <h2>iconen</h2>
+            <ul class="iconen-grid">
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/BijzondereBijstand.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Computer.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Eenzaamheid.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/F1.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Chat.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Geboorte.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Hond.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Museum.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Overlijden.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Prijskaartje.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Plattegrond.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/OnderwijsHoger.svg" alt="" width="48" height="48">
+              </li> 
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Sinterklaas.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/TrouwenEnGeregistreerdPartnerschap.svg" alt="" width="48" height="48">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/OpenGemeenten/Iconenset/refs/heads/master/Svg/Line/Rijbewijs.svg" alt="" width="48" height="48">
+              </li>
+            </ul>
+          </section>
+          
         
-
-
-
           <!-- Uitleg die voor ALLE iconen geldt -->
         <section class="gebruik-opties">
           <h2>Zo gebruik je de iconen</h2>
@@ -186,7 +139,7 @@
         </section>
     </main>
 
-    <footer>
+  <footer>
       <div class="footer-teksten">
         <div>
           <h2>Over de iconen</h2>
