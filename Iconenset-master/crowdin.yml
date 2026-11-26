@@ -1,5 +1,0 @@
-bundles:
-  - 2
-files:
-  - source: /Translations/Icons.xlf
-    translation: /Translations/%two_letters_code%.Icons.xlf
